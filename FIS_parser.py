@@ -41,7 +41,7 @@ def parse(line):
     time = line[1:9]
 
     # 추출대상 값들을 Parser의 {:w}로 파싱 > 각 값들은 배열로 반환됨
-    result = search("FIS[{:w}]->LDM : [WorkpieceComplete]WorkpieceID : {:w}, Lane : {:w}", line)
+    result = search("FIS[{:w}]->LDM : [WorkpieceComplete]Workpiece ID : {:w}, Lane : {:w}", line)
    
   
     #result = search("[{:w}][id={:w}] {:w}[elapsed={:w}ms] result={:w}", line)
